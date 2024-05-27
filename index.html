@@ -18,14 +18,14 @@
 
             </div>
             <div class="navmiddle">
-                  <div>
-                        <input type="search" placeholder="search..." />
-                  </div>
+             <span>
+                        <input type="text" placeholder="search" id="search-bar" class="form-control" />
+                   </span>
 
-                  <div>
-                        <img src="images/search.png" alt="search" />
+                  <!-- <div> --> 
+                        <img src="images/search.png" alt="search" id="search-button" />
                         <!-- <img src="images/voice-search.png"   alt="audio" /> -->
-                  </div>
+                  <!-- </div> -->
 
             </div>
             <div class="navright">
@@ -42,28 +42,28 @@
       <div class="content">
             <div class="main-sidebar">
 
-                  <a href="/play.html"><img src="images/home.png" alt="home" />
+                  <a href="#" class="sidebar-link"  data-link="/index.html"><img src="images/home.png" alt="home"  />
                         <p class="active">Home</p>
                   </a>
-                  <a href="/play.html"><img src="images/explore.png" alt="explore" />
+                  <a href="#" class="sidebar-link"  data-link="/play.html"><img src="images/explore.png" alt="explore" />
                         <p>Explore</p>
                   </a>
-                  <a href="/play.html"><img src="images/subscriprion.png" alt="subscription" />
+                  <a href="#" class="sidebar-link"  data-link="/play.html"><img src="images/subscriprion.png" alt="subscription" />
                         <p>Subscription</p>
                   </a>
-                  <a href="/play.html"><img src="images/library.png" alt="library" />
+                  <a href="#" class="sidebar-link"  data-link="/play.html"><img src="images/library.png" alt="library" />
                         <p>Library</p>
                   </a>
-                  <a href="/play.html"><img src="images/history.png" alt="history" />
+                  <a href="#" class="sidebar-link"  data-link="/play.html"><img src="images/history.png" alt="history" />
                         <p>History</p>
                   </a>
-                  <a href="/play.html"><img src="images/playlist.png" alt="playlist" />
+                  <a href="#" class="sidebar-link"  data-link="/play.html"><img src="images/playlist.png" alt="playlist" />
                         <p>Playlist</p>
                   </a>
-                  <a href="/play.html"><img src="images/messages.png" alt="messages" />
+                  <a href="#" class="sidebar-link"  data-link="/play.html"><img src="images/messages.png" alt="messages" />
                         <p>Messages</p>
                   </a>
-                  <a href="/play.html"><img src="images/show-more.png" alt="show-more" />
+                  <a href="#" class="sidebar-link"  data-link="/play.html"><img src="images/show-more.png" alt="show-more" />
                         <p>Show More</p>
                   </a>
                     <span ><hr></span>
@@ -87,8 +87,29 @@
 
             <!-- content -->
             <div class="main-content">
-                  <img src="images/banner.png" alt="alt" />
-
+                  <div class="btn-contain">
+                      <buttton class="video-btn activ" onclick="filterVideos('all')"> All</buttton>
+                      <buttton class="video-btn" onclick="filterVideos('music')">Music </buttton>
+                      <buttton class="video-btn" onclick="filterVideos('news')">News</buttton>
+                      <buttton class="video-btn" onclick="filterVideos('mixes')">Mixes</buttton>
+                      <buttton class="video-btn" onclick="filterVideos('live')">Live</buttton>
+                      <buttton class="video-btn" onclick="filterVideos('seen')">Seen</buttton>
+                      <buttton class="video-btn" onclick="filterVideos('recent')">Recently Uploaded</buttton>
+                      
+                  </div>
+                  <img src="images/banner.png" alt="alt"  />
+                  <div class="video-menu" id="video-menu">
+                        <!-- Static video entry -->
+                        <!-- <div class="video-sub-menu">
+                          <img src="images/thumbnail1.png" alt="th1" />
+                          <a href="/play.html" class="video-sub-inner">
+                            <img src="images/thumbnail1.png" alt="th1l" />
+                            <p>Lorem ipsum dolor, laboriosam, ad enim. Voluptatum, soluta. Commodi, aperiam nemo.</p>
+                          </a>
+                        </div> -->
+                        <!-- Dynamic video entries will be appended here -->
+                      </div>
+<!-- 
                   <div class="video-menu">
                         <div class="video-sub-menu">
                               <img src="images/thumbnail1.png" alt="th1" />
@@ -216,7 +237,7 @@
                         </div>
 
                        
-                  </div>
+                  </div> -->
             </div>
       </div>
 
