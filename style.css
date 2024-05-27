@@ -38,20 +38,32 @@ img{
       margin: 0px 15px;
       border-radius: 50%;
 }
+
+
+.navright img:hover{
+      height: 35px;
+      width: 35px;
+      margin: 0px 15px;
+      border-radius: 50%;
+}
 .navmiddle{
       padding: 20px;
       border:1px solid  #949191;
       border-radius: 20px;
       display: flex;
       justify-content: space-center;
+      align-items: center;
+      
 }
 .navmiddle img{
       height: 20px;
 }
-.navmiddle input{
-      border: none;
-      margin-top: -20px;
-}
+/* .navmiddle input{
+      border: none !important;
+      margin-top: 0px;
+      font-size: 16px;
+} */
+
 
 
 
@@ -133,7 +145,7 @@ img{
 .main-content{
       padding: 1% 16%;
       width: 80%;
-      margin-top: 4%;
+      margin-top: 3%;
       height: 20%;
      
 }
@@ -188,6 +200,72 @@ img{
       font-weight: 500;
       
 }
+.btn-contain{
+ display: flex;
+ justify-content: flex-start;
 
+ margin-bottom: 10px  !important;
+}
+.video-btn{
+      height: 20px;
+      background: #e7e5e5;
+      padding: 8px ;
+      margin: 5px;
+      /* border: 1px solid #575454; */
+      border-radius: 5px;
+}
+.activ {
+      background: #0f0d0d;
+      color:#fff;
+}     
 
+.video-btn:hover{
+   
+      background: #0f0d0d;
+      color:#fff;
+   
+}
 /* footercss */
+
+.hidden  {
+      display: none !important;
+  }
+
+  .content{
+      width:100%;
+  }
+
+  #video-container{
+      height: 800px;
+      width: 100%;
+      margin: 20px;
+  }
+  .navmiddle input,
+  .navmiddle input:focus,
+  .navmiddle input:hover {
+      border: none !important;
+  }
+  .navmiddle input[type="text"] {
+      border: none !important;
+  }
+
+
+  /* active */
+  .sidebar-link.active {
+      background-color: #cac4c4; /* Desired active background color */
+      color: red; /* Desired text color */
+  }
+  
+  .sidebar-link img {
+      vertical-align: middle;
+  }
+  
+  .sidebar-link p {
+      display: inline;
+      margin-left: 10px;
+  }
+  
+  .sidebar-link:hover {
+      background-color: #d4cece; /* Desired active background color */
+      color: red; /* Desired text color */
+  }
